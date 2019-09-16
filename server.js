@@ -3,7 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const PORT = 80;
+const PORT = 443;
 
 app.use(cors());
 app.use(bodyParser.json());
