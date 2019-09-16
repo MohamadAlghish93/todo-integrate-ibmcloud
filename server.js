@@ -3,7 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const PORT = 443;
+const PORT = 0;
 
 app.use(cors());
 app.use(bodyParser.json());
@@ -85,6 +85,6 @@ todoRoutes.route('/update/:id').post(function(req, res) {
 });
 
 
-app.listen(PORT, function() {
+app.listen(function() {
     console.log("Server is running on Port: " + PORT);
 });
